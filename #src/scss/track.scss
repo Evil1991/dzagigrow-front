@@ -1,0 +1,15 @@
+.track__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--success-color);
+    border-radius: 12px;
+}
+.track__wrapper {
+    display: flex;
+    padding: 52px 28px;
+}
+.subscribe {
+    button {
+        margin-left: 24px;
+    }
+}

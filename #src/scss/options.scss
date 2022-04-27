@@ -1,0 +1,111 @@
+.options {
+    background: #F7F7F7;
+    padding-bottom: 36px;
+}
+.options__card {
+    .options__card-img-wrapper {
+        position: relative;
+    }
+    &:nth-child(1) {
+        .options__card-inner {
+            &::before {
+                background-color: var(--success-color);
+            }
+        }
+        .options__card-img-wrapper {
+            height: 188px;
+            top: 21px;
+        }
+    }
+    &:nth-child(2) {
+        .options__card-inner {
+            &::before {
+                background-color: #A10040;
+            }
+        }
+        .options__card-img-wrapper {
+            top: -52px;
+            height: 277px;
+        }
+    }
+    &:nth-child(3) {
+        .options__card-inner {
+            &::before {
+                background-color: #0465D0;
+            }
+        }
+        .options__card-img-wrapper {
+            height: 180px;
+            top: 31px;
+        }
+    }
+    &:nth-child(4) {
+        .options__card-inner {
+            &::before {
+                background-color: #FCC649;
+            }
+        }
+        .options__card-img-wrapper {
+            height: 204px;
+        }
+    }
+    &:nth-child(5) {
+        .options__card-inner {
+            &::before {
+                background-color: #E96E2A;
+            }
+        }
+        .options__card-img-wrapper {
+            height: 204px;
+            top: 17px;
+        }
+    }
+}
+.options__card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+.options__card-img-wrapper {
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.options__card-inner {
+    background: #ffffff;
+    border-radius: 12px;
+    filter: drop-shadow(0px 4px 20px rgba(34, 34, 34, 0.15));
+    padding: 24px 12px;
+    height: 296px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: "";
+        top: -99px;
+        left: -59px;
+        width: 101%;
+        height: 110%;
+        position: absolute;
+        z-index: -1;
+        transform: rotate(47deg);
+    }
+}
+.options__row {
+    display: flex;
+    margin: 0 -9px;
+    justify-content: space-between;
+    .options__card {
+        flex: 0 1 20%;
+        padding: 0 9px;
+    }
+}

@@ -1,0 +1,238 @@
+/// слайдер с отзывами
+.testimonials {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    &__wrapper {
+        align-items: stretch;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__item {
+        display: block;
+        flex-shrink: 0;
+    }
+    &__pagination {
+        align-items: center;
+        bottom: 40px;
+        display: flex;
+        justify-content: center;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: 5;
+
+        @media (max-width: 768px) {
+            bottom: 24px;
+        }
+
+        &-item {
+
+            background: rgba(0,0,0,0.2);
+            cursor: pointer;
+            display: block;
+            width: 28px;
+            height: 28px;
+            border: 1px solid rgba(0, 170, 46, 0.5);
+
+            &:hover {
+                background: #77243a;
+            }
+
+            &_active {
+                background: #0d0a0a;
+            }
+        }
+    }
+    &__navigation {
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+        &-item {
+
+            top: 46%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            z-index: 6;
+            width: 28px;
+            height: 28px;
+            border: 1px solid rgba(0, 170, 46, 0.5);
+            border-radius: 50px;
+
+            svg {
+                fill: none;
+                stroke: var(--success-color);
+                width: 18px;
+                height: 14px;
+            }
+
+            &:hover {
+                color: #77243a;
+            }
+
+            &_prev {
+                left: 28px;
+
+                .icon {
+                    transform: rotate(180deg);
+                }
+            }
+            &_next {
+                right: 28px;
+                svg {
+                    transform: scale(-1,1);
+                }
+            }
+            &_disabled {
+                display: none;
+            }
+
+            .icon {
+
+                display: block;
+            }
+        }
+    }
+}
+.slider__item {
+    position: relative;
+    height: 300px;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+////
+.testimonials {
+    flex: 0 1 50%;
+    padding: 12px;
+}
+.testimonials__item {
+    padding: 52px 68px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(34, 34, 34, 0.15);
+}
+.testimonials__date {
+    margin-top: 7px;
+}
+.know {
+    background-color: #F7F7F7;
+    padding-top: 22px;
+}
+.know__credit {
+    flex: 0 1 50%;
+    padding-right: 12px;
+    padding-top: 12px;
+}
+.know__credit-inner {
+    background-color: var(--success-color);
+    border-radius: 8px;
+    padding: 57px 28px;
+}
+.know__row {
+    display: flex;
+}
+.know__credit-title {
+    display: inline-block;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--white-color);
+    line-height: 22px;
+}
+.know__credit-text {
+    margin-bottom: 19px;
+}
+.subscribe__input {
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.subscribe__wrapper {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe__span {
+    max-width: 316px;
+}
+.label__span {
+    position: relative;
+    display: block;
+    padding-left: 23px;
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+        background-color: var(--white-color);
+        background-size: 7px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.label {
+    input {
+        display: none;
+        &:checked + span {
+            &::before {
+                background-image: url("../img/icons/checked.svg");
+            }
+        }
+    }
+}
+.testimonials__name {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.testimonials__text {
+    text-align: center;
+    max-width: 416px;
+    margin: 0 auto;
+}
+.testimonials__bottom {
+    margin-top: 34px;
+}
+.testimonials__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials__btn {
+    min-width: 132px;
+}
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+.rating-mini span {
+    padding: 0;
+    font-size: 17px;
+    line-height: 1;
+    color: lightgrey;
+    &:not(:last-child) {
+        margin-right: 6px;
+    }
+}
+.rating-mini > span:before {
+    content: '★';
+}
+.rating-mini > span.active {
+    color: #FFEA00;
+}

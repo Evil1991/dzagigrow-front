@@ -1,0 +1,47 @@
+.grow {
+    padding-top: 36px;
+    padding-bottom: 72px;
+    background-color: #F7F7F7;
+}
+.grow__span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.grow__logo {
+    white-space: nowrap;
+    margin-right: 44px;
+}
+.grow__header {
+    margin-bottom: 48px;
+    align-items: center;
+}
+.grow__header {
+    display: flex;
+}
+.grow__text {
+    padding-left: 24px;
+    position: relative;
+    &::before {
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 2px;
+        background-color: var(--success-color);
+        position: absolute;
+    }
+}
+.grow__wrapper {
+    padding: 52px 28px;
+    filter: drop-shadow(0px 4px 20px rgba(34, 34, 34, 0.15));
+    border-radius: 12px;
+    background: var(--white-color);
+    text-align: center;
+}
+.grow__text {
+    text-align: left;
+}
+.grow__btn {
+    width: 132px;
+}

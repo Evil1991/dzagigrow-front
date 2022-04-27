@@ -1,0 +1,31 @@
+.partners {
+    padding-top: 36px;
+    padding-bottom: 72px;
+    background-color: var(--white-color);
+}
+.partners__title {
+    margin-bottom: 24px;
+}
+.partners__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -12px;
+}
+.partners__card {
+    padding: 0 12px;
+    flex: 0 1 16.6667%;
+}
+.partners__img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 168px;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
