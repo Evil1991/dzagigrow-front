@@ -1,15 +1,46 @@
+.track {
+    background: #F7F7F7;
+    padding-bottom: 72px;
+}
 .track__inner {
     display: flex;
     justify-content: space-between;
     background-color: var(--success-color);
     border-radius: 12px;
+    padding-left: 20px;
+}
+.track__logo-wrapper {
+    flex: 0 1 33.333%;
 }
 .track__wrapper {
     display: flex;
-    padding: 52px 28px;
+    padding: 52px 28px 52px 40px;
+    justify-content: space-between;
+}
+.track__img-wrapper {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 .subscribe {
     button {
         margin-left: 24px;
+    }
+}
+.track__text  {
+    text-decoration: underline;
+    max-width: 284px;
+}
+.track {
+    .subscribe {
+        flex: 0 1 322px;
     }
 }

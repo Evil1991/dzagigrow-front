@@ -83,6 +83,7 @@
 .header__middle {
     padding-top: 16px;
     padding-bottom: 16px;
+    position: relative;
 }
 .header__middle {
     display: flex;
@@ -261,6 +262,7 @@
     width: 14px;
     height: 14px;
     display: none;
+    stroke: #fff;
 }
 .header__catalog-btn--active {
     background: var(--success-color);
@@ -385,6 +387,111 @@
         margin-left: 12px;
     }
 }
+
+.header__cart {
+    cursor: pointer;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 21px;
+        width: 100%;
+        bottom: -20px;
+        left: 0;
+    }
+    &:hover {
+        .header__cart-block {
+            display: block;
+        }
+    }
+}
+.header__cart-block {
+    position: absolute;
+    right: -6px;
+    top: 97px;
+    z-index: 10;
+    background: #FFFFFF;
+    box-shadow: 0 12px 25px rgba(34, 34, 34, 0.15);
+    border-radius: 12px;
+    min-width: 492px;
+    width: 100%;
+    display: none;
+}
+.header__cart-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    position: relative;
+    &:not(:last-child) {
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: 16px;
+            background-color: #C4C4C4;
+            width: calc(100% - 32px);
+        }
+    }
+}
+.header__cart-span {
+    margin-bottom: 4px;
+    display: inline-block;
+}
+.header__cart-close {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #B8B8B8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+    svg {
+        width: 8px;
+        height: 8px;
+        fill: #B8B8B8;
+        stroke: #B8B8B8;
+    }
+}
+.header__cart-name {
+    max-width: 220px;
+    margin-right: 16px;
+}
+.header__cart-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    align-self: baseline;
+}
+.header__cart-img-wrapper {
+    width: 77px;
+    height: 77px;
+    position: relative;
+    margin-right: 24px;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.header__cart-bottom {
+    padding: 30px 24px;
+    background: rgba(0, 170, 46, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+.header__cart-clear {
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
+
 /*
 //Burger
 .icon-menu {

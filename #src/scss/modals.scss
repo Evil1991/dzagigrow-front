@@ -1,0 +1,100 @@
+/// модалка "вход"
+
+.form__input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #222222;
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+    padding: 10px 12px;
+    width: 100%;
+    &:focus {
+        background: rgba(0, 170, 46, 0.1);
+        border: 1px solid #C4C4C4;
+        outline: none;
+    }
+}
+.form__span {
+    margin-bottom: 12px;
+    display: block;
+}
+.modal-style  {
+    background: #FFFFFF;
+    padding: 28px;
+    filter: drop-shadow(0px 4px 20px rgba(34, 34, 34, 0.15));
+    border-radius: 12px;
+    max-width: 480px;
+    width: 100%;
+    overflow: visible;
+}
+.modal-style__title  {
+    text-align: center;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #C4C4C4;
+}
+.form {
+    margin-top: 28px;
+}
+.form__checkbox {
+    .form__checkbox-span {
+        padding-left: 22px;
+    }
+    .form__checkbox-span::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1px;
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+        background-color: var(--success-color);
+        background-size: 9px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.form__checkbox input:checked + span::before {
+    background-image: url(../img/icons/checked-white.svg);
+}
+.form__password-settings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.form__label {
+    display: block;
+    margin-bottom: 16px;
+}
+.form__btn-register {
+    margin-top: 16px;
+}
+.modal-style {
+    button[type="button"] {
+        background: var(--success-color);
+        border-radius: 100px;
+        width: 48px;
+        height: 48px;
+        color: #fff;
+        right: -65px;
+        opacity: 1;
+    }
+}
+.form__label-star {
+    color: var(--success-color);
+}
+.form__agreement {
+    color: var(--success-color);
+    text-decoration: underline;
+}
+.form__captcha-img {
+    margin-bottom: 16px;
+}
+.sign-up-modal {
+    .form__btn-sing-in {
+        margin-top: 39px;
+    }
+}
+// модалка регистрация
