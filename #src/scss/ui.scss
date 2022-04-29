@@ -4,7 +4,7 @@ a {
 :root {
     --success-color: #00AA2E;
     --dark-color: #222222;
-    --secondaty-color: #B8B8B8;
+    --secondary-color: #B8B8B8;
     --white-color: #ffffff;
     --danger-color: #FE1F13;
     --muted-color: #C4C4C4;
@@ -22,7 +22,7 @@ a {
     color: var(--success-color);
 }
 .text-secondary {
-    color: var(--secondaty-color);
+    color: var(--secondary-color);
 }
 .text-muted {
     color: var(--muted-color);
@@ -66,6 +66,14 @@ a {
     font-weight: 400;
     font-size: 28px;
     line-height: 33px;
+}
+.title-56 {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+}
+.text-medium {
+    font-weight: 500;
 }
 .text-bold {
     font-weight: 700;
@@ -163,4 +171,13 @@ a {
     padding: 19px 8px;
     width: 100%;
     background-color: transparent;
+}
+.btn-white-outline {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 8px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    color: var(--white-color);
 }
