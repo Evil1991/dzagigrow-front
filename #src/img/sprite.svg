@@ -90,4 +90,7 @@
     <symbol id="minus-icon" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1L9 1" stroke="white" stroke-linecap="round"/>
     </symbol>
+    <symbol id="arrow-icon-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none">
+        <path d="M9.5 5.25L5 0.75L0.5 5.25" stroke="#D9DADB" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 </svg>
