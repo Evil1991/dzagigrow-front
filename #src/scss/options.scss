@@ -24,7 +24,7 @@
             }
         }
         .options__card-img-wrapper {
-            top: -52px;
+            top: -30px;
             height: 277px;
         }
     }
@@ -46,17 +46,7 @@
             }
         }
         .options__card-img-wrapper {
-            height: 204px;
-        }
-    }
-    &:nth-child(5) {
-        .options__card-inner {
-            &::before {
-                background-color: #E96E2A;
-            }
-        }
-        .options__card-img-wrapper {
-            height: 204px;
+            height: 210px;
             top: 17px;
         }
     }
@@ -91,13 +81,13 @@
     overflow: hidden;
     &::before {
         content: "";
-        top: -99px;
-        left: -59px;
-        width: 101%;
-        height: 110%;
+        top: -207px;
+        left: -153px;
+        width: 141%;
+        height: 137%;
         position: absolute;
         z-index: -1;
-        transform: rotate(47deg);
+        transform: rotate(53deg);
     }
 }
 .options__row {
@@ -105,7 +95,7 @@
     margin: 0 -9px;
     justify-content: space-between;
     .options__card {
-        flex: 0 1 20%;
-        padding: 0 9px;
+        flex: 0 1 25%;
+        padding: 0 12px;
     }
 }

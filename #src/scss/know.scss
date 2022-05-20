@@ -143,6 +143,7 @@
 }
 .know__row {
     display: flex;
+    width: calc(100% + 10px);
 }
 .know__credit-title {
     display: inline-block;

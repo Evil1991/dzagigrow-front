@@ -113,11 +113,14 @@ a {
     padding: 8px;
     display: flex;
     justify-content: center;
+    height: 32px;
     .btn-success-outline__icon-wrapper {
         width: 18px;
         height: 18px;
         border: 1px solid #00AA2E;
         border-radius: 50%;
+        top: -2px;
+        position: relative;
         svg {
             width: 10px;
             height: 10px;
@@ -184,4 +187,7 @@ a {
     border: 1px solid #FFFFFF;
     border-radius: 8px;
     color: var(--white-color);
+}
+.text--line-through {
+    text-decoration: line-through;
 }
